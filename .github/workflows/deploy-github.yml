@@ -27,7 +27,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: AndrikSaba/doks@v3
+        uses: AndrikSaba/doks@latest
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
